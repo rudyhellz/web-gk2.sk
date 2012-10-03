@@ -1,7 +1,8 @@
 body {
-  background: #ccc;
+  background: #ccc url('back.png');
   padding: 8px;
-  font-family: 
+  font-family: 'PT Sans', sans-serif;
+  width: 2850px;
 }
 
 a {
@@ -9,9 +10,16 @@ a {
 }
 
 #logo {
+  margin-top: 40px;
   margin-left: 200px;
   width: 256px;
   height: 256px;
+}
+
+#logo_text {
+  margin-left: 200px;
+  width: 256px;
+  height: 64px;
 }
 
 .box {
@@ -28,11 +36,13 @@ h1 {
   margin: 0;
   font-size: 2.5em;
   text-align: center;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 h2 {
   margin: 0;
   font-size: 2em;
+  font-family: 'PT Sans Caption', sans-serif;
 }
 
 .title {
@@ -50,4 +60,8 @@ p.desc {
 img.thumb {
   width: 128px;
   height: 96px;
+}
+
+li {
+  margin-left: -1em;
 }

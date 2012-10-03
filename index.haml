@@ -1,6 +1,8 @@
 !!!
 %html
   %head
+    %link(rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans:400,700,400italic")
+    %link(rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=PT+Sans+Caption:400,700")
     %link(rel="stylesheet" type="text/css" href="style.css")
     %link(rel="stylesheet" type="text/css" href="easybox/easybox.min.css")
     %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js")
@@ -11,18 +13,21 @@
 
     .box
       %img#logo(src="logo.png")
-      %h1 GK2.sk
+      %img#logo_text(src="logo_text.png")
       %p.title software, hardware and electronics hacking
-      %p.desc Need help with an interesting software, hardware or electronics project? Don't hesitate to contact me!
       %ul
         %li.email
+          email:
           %a(href="mailto:stick@gk2.sk") stick@gk2.sk
         %li.jabber
+          jabber:
           %a(href="xmpp:stick@gk2.sk") stick@gk2.sk
-        %li.phone (+420) 22595&times;34396
+        %li.phone
+          phone: (+420) 22595&times;34396
+      %p.desc Need help with an interesting software, hardware or electronics project? Don't hesitate to contact me!
       %ul
         %li.cv
-          %a(href="http://gk2.sk/cv/") cv
+          %a(href="http://gk2.sk/cv/") resume
         %li.twitter
           %a(href="http://www.twitter.com/pavolrusnak") twitter
         %li.blog
@@ -34,14 +39,14 @@
       - (0..4).each do |i|
         %a(href="images/armap#{i}.jpg" rel="lightbox-armap")<
           %img.thumb(src="images/armap#{i}.png")
+      %a(href="http://www.youtube.com/watch?v=q8I4r-2cvAA&t=3m14s" rel="lightbox-armap")<
+        %img.thumb(src="images/armap5.png")
       %p Originally a collaboration with Tomas Mudrunka, based on the work by Oliver Kreylos. Now powered by a custom lightweight open-source software capable of running on embedded devices like Raspberry Pi or Beagleboard.
       %ul
         %li
           %a(href="http://idav.ucdavis.edu/~okreylos/ResDev/SARndbox/") SARndbox by Oliver Kreylos
         %li
           %a(href="http://blog.harvie.cz/") Tomas Mudrunka
-        %li
-          %a(href="http://github.com/brmlab/armap") source code at github
 
     .box
       %h2 Mirrsaic - NOW
@@ -51,12 +56,11 @@
       - (1..9).each do |i|
         %a(href="images/mirrsaic#{i}.jpg" rel="lightbox-mirrsaic")<
           %img.thumb(src="images/mirrsaic#{i}.png")
-      %p What Prokop says about this project:
       %p.desc In an urban scene we can see solar reflections of geometric forms. Abstract composition described by the sun is approaching from above towards the ground. After several hours, the shapes overlap, thus creating a powerful light cluster, which is changing very fast in an interlocking inscription. Individual light fragments at the moment of encounter rendering the word "NOW" which accurately captures the transience of the moment.
       %p.desc Today, the availability of efficient design and lighting technologies, mapping and generative art is often oblivious to the basic rules of light, time and space. I decided to create a impressive public space light installation that would work within the elementary principles. Mirrsaic, as a process and a tool was programmed, generated and manufactured using the most modern techniques and technologies, which are not directly seen by the viewer. The most complicated project tool is hidden; it remains just a wall, a daylight system and several mirrors in the exact shape, the exact place at the exact time.
       %ul
         %li
-          %a(href="http://www.prokopbartonicek.com/?page_id=564") MIRRSAIC - NOW page on Prokop's site
+          %a(href="http://www.prokopbartonicek.com/?page_id=564") Prokop Bartonicek's site
 
     .box
       %h2 Potbox
@@ -65,6 +69,3 @@
         %a(href="images/potbox#{i}.jpg" rel="lightbox-potbox")<
           %img.thumb(src="images/potbox#{i}.png")
       %p The project uses OpenCV for retrieving camera stream, which is later rendered using OpenGL and advanced pixel-shader. The behaviour of this pixel shader is controlled by an attached MIDI controller, which together with movable camera provides an easy and intuitive way how to interact with the complex chaotic visual system. Audio can be also used to changed the filter parameters resulting in visuals that react to volume and/or frequency of recorded sound.
-      %ul
-        %li
-          %a(href="http://github.com/prusnak/potbox") source code at github
