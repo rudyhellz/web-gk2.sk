@@ -66,3 +66,10 @@ img.thumb {
 li {
   margin-left: -1em;
 }
+
+#scrollinfo {
+  text-align: right;
+  width: 660px;
+  position: absolute;
+  top: 660px;
+}
