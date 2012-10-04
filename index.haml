@@ -9,7 +9,7 @@
     %script(type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js")
     %script(type="text/javascript" src="easybox/jquery.mousewheel.min.js")
     %script(type="text/javascript" src="easybox/easybox.min.js")
-    %script(type="text/javascript" src="easybox/script.js")
+    %script(type="text/javascript" src="script.js")
     %title GK2.sk
   %body
 
@@ -68,7 +68,9 @@
     .box
       %h2 Potbox
       %p Interactive videofeedback VJing software. Camera is pointed to the computer screen and its picture is modified by custom made visual filters to create breathtaking visuals.
-      - (0..9).each do |i|
+      %a(href="http://www.youtube.com/watch?v=ljqyTNhQluk" rel="lightbox-potbox")<
+        %img.thumb(src="images/potbox.png")
+      - (1..9).each do |i|
         %a(href="images/potbox#{i}.jpg" rel="lightbox-potbox")<
           %img.thumb(src="images/potbox#{i}.png")
       %p The project uses OpenCV for retrieving camera stream, which is later rendered using OpenGL and advanced pixel-shader. The behaviour of this pixel shader is controlled by an attached MIDI controller, which together with movable camera provides an easy and intuitive way how to interact with the complex chaotic visual system. Audio can be also used to changed the filter parameters resulting in visuals that react to volume and/or frequency of recorded sound.
