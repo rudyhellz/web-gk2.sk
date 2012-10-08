@@ -10,7 +10,7 @@ a {
 }
 
 #logo {
-  margin-top: 40px;
+  margin-top: 20px;
   margin-left: 200px;
   width: 256px;
   height: 256px;
@@ -43,6 +43,14 @@ h1 {
 h2 {
   margin: 0;
   font-size: 2em;
+  font-family: 'PT Sans Caption', sans-serif;
+}
+
+.name {
+  margin: 8px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.2em;
   font-family: 'PT Sans Caption', sans-serif;
 }
 
