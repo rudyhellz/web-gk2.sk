@@ -64,6 +64,7 @@ p {
 
 p.desc {
   font-style:italic;
+  text-align: center;
 }
 
 img.thumb {
