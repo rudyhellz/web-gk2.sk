@@ -41,11 +41,11 @@
     .box
       %h2 ARMap Sandbox
       %p Interactive Augmented Reality Mapping Sandbox. Kinect reads the height map of the world created by people from sand. This height information is then translated by a computer into the corresponding color, which is then projected on the sand surface via a digital projector.
-      %a(href="http://www.youtube.com/watch?v=OjuHr8QgUP0" rel="lightbox-armap")<
-        %img.thumb(src="images/armap0.png")
-      - (1..6).each do |i|
-        %a(href="images/armap#{i}.jpg" rel="lightbox-armap")<
-          %img.thumb(src="images/armap#{i}.png")
+      %a(href="http://www.youtube.com/watch?v=OjuHr8QgUP0" rel="lightbox-sandbox")<
+        %img.thumb(src="images/sandbox0.png")
+      - (1..9).each do |i|
+        %a(href="images/sandbox#{i}.jpg" rel="lightbox-sandbox")<
+          %img.thumb(src="images/sandbox#{i}.png")
       %p Originally a collaboration with Tomas Mudrunka, based on the work by Oliver Kreylos. Now powered by a custom lightweight open-source software capable of running on embedded devices like Raspberry Pi or Beagleboard.
       %ul
         %li
