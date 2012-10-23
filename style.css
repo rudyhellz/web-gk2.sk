@@ -63,7 +63,10 @@ p {
 }
 
 p.desc {
-  font-style:italic;
+  font-style: italic;
+}
+
+p.center {
   text-align: center;
 }
 
