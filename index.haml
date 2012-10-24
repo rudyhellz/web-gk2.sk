@@ -39,6 +39,17 @@
       %p#scrollinfo scroll right to see the selected works &rArr;
 
     .box
+      %h2 ARMap eBook
+      %p A book with plain pages stands on a pedestal. When a person approaches it, the text slowly appears on its pages. When a page is turned, the book reacts by showing different page contents respecting the direction of a page flip.
+      - (0..9).each do |i|
+        %a(href="images/ebook#{i}.jpg" rel="lightbox-ebook")<
+          %img.thumb(src="images/ebook#{i}.png")
+      %p The work being a collaboration with Richard Janecek was featured in the National Technical Library (NTK) Gallery in Prague. It uses Kinect and a digital projector to achieve the mentioned effect, so similarly to ARMap Sandbox the technology stays well hidden from casual passers-by.
+      %ul
+        %li
+          %a(href="http://www.techlib.cz/cs/2228-pvinntk-vystava-atelieru-fotografie-famu-praha/") PVinNTK website
+
+    .box
       %h2 ARMap Sandbox
       %p Interactive Augmented Reality Mapping Sandbox. Kinect reads the height map of the world created by people from sand. This height information is then translated by a computer into the corresponding color, which is then projected on the sand surface via a digital projector.
       %a(href="http://www.youtube.com/watch?v=OjuHr8QgUP0" rel="lightbox-sandbox")<
@@ -69,13 +80,13 @@
 
     .box
       %h2 Potbox
-      %p Interactive videofeedback VJing software. A camera is pointed to the computer screen, its picture is modified by a chain of custom made visual filters, which is then shown again on the very same screen. This feedback creates a complex chaotic system of colorful visuals.
+      %p Interactive video-feedback VJing software. A camera is pointed to the computer screen, its picture is modified by a chain of custom made visual filters, which is then shown again on the very same screen. This feedback creates a complex chaotic system of colorful visuals.
       %a(href="http://www.youtube.com/watch?v=ljqyTNhQluk" rel="lightbox-potbox")<
         %img.thumb(src="images/potbox0.png")
       - (1..9).each do |i|
         %a(href="images/potbox#{i}.jpg" rel="lightbox-potbox")<
           %img.thumb(src="images/potbox#{i}.png")
-      %p The project uses OpenCV for retrieving the camera stream, which is later rendered using OpenGL and an advanced pixel-shader. The behaviour of this shader is controlled by an attached MIDI controller, which in combination with a movable camera provides an easy and intuitive way how to interact with the process that generates the images. Audio can also be used to change the filter parameters resulting in visuals that react to volume and/or frequency of the recorded sound.
+      %p The project uses OpenCV for retrieving the camera stream, which is later rendered using OpenGL and an advanced pixel-shader. The behavior of this shader is controlled by an attached MIDI controller, which in combination with a movable camera provides an easy and intuitive way how to interact with the process that generates the images. Audio can also be used to change the filter parameters resulting in visuals that react to volume and/or frequency of the recorded sound.
 
     :javascript
       var _gaq = _gaq || [];
