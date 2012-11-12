@@ -14,7 +14,7 @@
     <title>GK2.sk</title>
   </head>
   <body>
-    <div class='box' id='box1'>
+    <div class='box' id='top'>
       <img id='logo' src='logo.png' />
       <img id='logo_text' src='logo_text.png' />
       <p class='name'>Pavol Rusnák</p>
@@ -47,10 +47,12 @@
           <a href='http://linkedin.com/in/prusnak'>linkedin</a>
         </li>
       </ul>
-      <p id='scrollinfo'>scroll right to see the selected works &rArr;</p>
+      <a class='btndown' href='#sandbox'></a>
     </div>
-    <div class='box' id='box2'>
-      <h2>ARMap Sandbox</h2>
+    <div class='box' id='sandbox'>
+      <h2>
+        <a href='#sandbox'>ARMap Sandbox</a>
+      </h2>
       <p>Interactive Augmented Reality Mapping Sandbox. Kinect reads the height map of the world created by people from sand. This height information is then translated by a computer into the corresponding color, which is then projected on the sand surface via a digital projector.</p>
       <a href='http://www.youtube.com/watch?v=OjuHr8QgUP0' rel='lightbox-sandbox'><img class='thumb' src='images/sandbox0.png' /></a>
       <a href='images/sandbox1.jpg' rel='lightbox-sandbox'><img class='thumb' src='images/sandbox1.png' /></a>
@@ -71,9 +73,12 @@
           <a href='http://blog.harvie.cz/'>Tomas Mudrunka</a>
         </li>
       </ul>
+      <a class='btndown' href='#mirrsaic'></a>
     </div>
-    <div class='box' id='box3'>
-      <h2>Mirrsaic - NOW</h2>
+    <div class='box' id='mirrsaic'>
+      <h2>
+        <a href='#mirrsaic'>Mirrsaic - NOW</a>
+      </h2>
       <p>A collaboration with Prokop Bartonicek. My responsibility was to create a software capable of visualizing the scene including sun rays and mirror reflections. Custom-cut mirror shapes and a calibration pattern were also produced by the very same software.</p>
       <a href='http://vimeo.com/50501685' rel='lightbox-mirrsaic'><img class='thumb' src='images/mirrsaic0.png' /></a>
       <a href='images/mirrsaic1.jpg' rel='lightbox-mirrsaic'><img class='thumb' src='images/mirrsaic1.png' /></a>
@@ -92,9 +97,12 @@
           <a href='http://www.prokopbartonicek.com/?page_id=564'>Prokop Bartonicek's site</a>
         </li>
       </ul>
+      <a class='btndown' href='#potbox'></a>
     </div>
-    <div class='box' id='box4'>
-      <h2>Potbox</h2>
+    <div class='box' id='potbox'>
+      <h2>
+        <a href='#potbox'>Potbox</a>
+      </h2>
       <p>Interactive video-feedback VJing software. A camera is pointed to the computer screen, its picture is modified by a chain of custom made visual filters, which is then shown again on the very same screen. This feedback creates a complex chaotic system of colorful visuals.</p>
       <a href='http://www.youtube.com/watch?v=ljqyTNhQluk' rel='lightbox-potbox'><img class='thumb' src='images/potbox0.png' /></a>
       <a href='images/potbox1.jpg' rel='lightbox-potbox'><img class='thumb' src='images/potbox1.png' /></a>
@@ -107,9 +115,12 @@
       <a href='images/potbox8.jpg' rel='lightbox-potbox'><img class='thumb' src='images/potbox8.png' /></a>
       <a href='images/potbox9.jpg' rel='lightbox-potbox'><img class='thumb' src='images/potbox9.png' /></a>
       <p>The project uses OpenCV for retrieving the camera stream, which is later rendered using OpenGL and an advanced pixel-shader. The behavior of this shader is controlled by an attached MIDI controller, which in combination with a movable camera provides an easy and intuitive way how to interact with the process that generates the images. Audio can also be used to change the filter parameters resulting in visuals that react to volume and/or frequency of the recorded sound.</p>
+      <a class='btndown' href='#book'></a>
     </div>
-    <div class='box' id='box5'>
-      <h2>ARMap eBook</h2>
+    <div class='box' id='book'>
+      <h2>
+        <a href='#book'>ARMap Book</a>
+      </h2>
       <p>A book with plain pages stands on a pedestal. When a person approaches it, the text slowly appears on its pages. When a page is turned, the book reacts by showing different page contents respecting the direction of a page flip.</p>
       <p class='desc center'>photos soon</p>
       <p>The work being a collaboration with Richard Janecek was featured in the National Technical Library (NTK) Gallery in Prague. It uses Kinect and a digital projector to achieve the mentioned effect, so similarly to ARMap Sandbox the technology stays well hidden from casual passers-by.</p>
@@ -118,6 +129,7 @@
           <a href='http://www.techlib.cz/cs/2228-pvinntk-vystava-atelieru-fotografie-famu-praha/'>PVinNTK website</a>
         </li>
       </ul>
+      <a class='btnup' href='#top'></a>
     </div>
     <script type='text/javascript'>
       //<![CDATA[
